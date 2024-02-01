@@ -1,3 +1,39 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+.mainContainer{
+    display:flex;
+    
+}
+
+.tileWrap{
+    perspective: 1000px;
+    height: 10rem;
+    width:8rem;
+    position:relative;
+    transition: transform 1s;
+    transform-style: preserve-3d;
+}
+
+.tileImageFront{
+    height: 100%;
+    width:8rem;
+    position: absolute;
+    backface-visibility: hidden;
+}   
+
+.tileImageBack{
+    height: 100%;
+    width:8rem;
+    position:absolute;
+    transform:rotateY(180deg);
+    backface-visibility: hidden;
+}
+
+.tileWrap:hover{
+    transform: rotateY(180deg);
+}
+
+
+
