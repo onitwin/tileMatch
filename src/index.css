@@ -2,30 +2,51 @@
 @tailwind components;
 @tailwind utilities;
 
-.mainContainer{
+
+.gameContainer{
+    display: flex;
+    justify-content: center;
+    width:100%;
+}
+
+.headerTextWrap{
+    width:100%;
+    margin-bottom: 2rem;
+    display: flex;
+    justify-content: center;
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-size:3rem;
+}
+
+.allTiles{
     display:flex;
+    flex-wrap:wrap;
+    justify-content: center;
+    gap: 1px;
+    min-width: 32rem;
     
 }
 
 .tileWrap{
     perspective: 1000px;
     height: 10rem;
-    width:8rem;
+    width:24%;
     position:relative;
     transition: transform 1s;
     transform-style: preserve-3d;
+    
 }
 
-.tileImageFront{
+/* .tileImageFront{
     height: 100%;
     width:8rem;
     position: absolute;
     backface-visibility: hidden;
-}   
+}    */
 
 .tileImageBack{
     height: 100%;
-    width:8rem;
+    width:7.5rem;
     position:absolute;
     transform:rotateY(180deg);
     backface-visibility: hidden;
@@ -33,6 +54,14 @@
 
 .tileWrap:hover{
     transform: rotateY(180deg);
+}
+
+.cardBack{
+    height: 100%;
+    width: 7.5rem;
+    position: absolute;
+    backface-visibility: hidden;
+    background-color: red;
 }
 
 
