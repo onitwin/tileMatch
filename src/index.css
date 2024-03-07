@@ -34,6 +34,9 @@
     position:relative;
     transition: transform 1s;
     transform-style: preserve-3d;
+    display:flex;
+    justify-content: center;
+    align-items: center;
     
 }
 
@@ -46,10 +49,16 @@
 
 .tileImageBack{
     height: 100%;
-    width:7.5rem;
     position:absolute;
     transform:rotateY(180deg);
     backface-visibility: hidden;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.tileImage{
+    height:80%;
 }
 
 .tileWrap:hover{
@@ -58,10 +67,14 @@
 
 .cardBack{
     height: 100%;
-    width: 7.5rem;
+    width: 7.6rem;
     position: absolute;
     backface-visibility: hidden;
-    background-color: red;
+    background-color: black;
+}
+
+.cardbackImage{
+    height:100%;
 }
 
 

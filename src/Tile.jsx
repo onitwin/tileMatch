@@ -3,8 +3,15 @@ const Tile = ({ imageOne, imageTwo }) => {
         <>
             <div className="tileWrap">
                 {/* <img className="tileImageFront" src={imageOne}/> */}
-                <div className="cardBack"></div>
-                <img className="tileImageBack" src={imageTwo} />
+                <div className="cardBack">
+                    <img
+                        className="cardBackImage"
+                        src="src/assets/pokemonImages/pokeball.png"
+                    />
+                </div>
+                <div className="tileImageBack">
+                    <img className="tileImage" src={imageTwo} />
+                </div>
             </div>
         </>
     );

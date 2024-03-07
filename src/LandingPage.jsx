@@ -1,22 +1,15 @@
-import {React, useState} from "react"
-import GamePage from "./GamePage"
-import AddressError from "./AddressError";
+import { React, useState } from "react";
+import GamePage from "./GamePage";
 
-const LandingPage=()=>{
-   
-  const [noOfTiles,setNoOfTiles]=useState(5);
+const LandingPage = () => {
+    const [noOfTiles, setNoOfTiles] = useState(9);
 
-
-
-    return(
+    return (
         <>
-        <GamePage noOfTiles={noOfTiles}/>
+            <GamePage noOfTiles={noOfTiles} />
         </>
-       
-      
-    )
-
-}
-export default LandingPage
+    );
+};
+export default LandingPage;
 
 //add routing mechanism here
